@@ -51,6 +51,9 @@
       padding: 2px;
       width: 320px
     }
+    .my-card-icon{
+      padding-top: 5px !important;
+    }
     .my-card .row{
       margin-bottom: 0px;
     }
@@ -66,7 +69,7 @@
       font-weight: normal;
     }
   </style>
-
+<div class="navbar-fixed">
   <nav>
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo center"><img src="img/logo.png" class="responsive-img" alt=""></a>
@@ -93,6 +96,7 @@
       </ul>
     </div>
   </nav>
+</div>
 
   <div class="container">
     <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
@@ -108,9 +112,9 @@
       </ul>
     </div>
     <div class="row">
-      <h2>Input Controls</h2>
-      <p>Input controls are the interactive components in your app's user interface. Android provides a wide variety of controls you can use in your UI, such as buttons, text fields, seek bars, checkboxes, zoom buttons, toggle buttons, and many more.</p>
-      <p>Adding an input control to your UI is as simple as adding an XML element to your XML layout. For example, here's a layout with a text field and button:</p>
+      <h2>Controles de entrada</h2>
+      <p>Los controles de entrada son los componentes interactivos en la interfaz de usuario de tu app. Android provee una amplía variedad de controles que puedes usar en tu IU, tales como botones, campos de texto, barras de búsqueda, checkboxes, botones de zoom, botones toggle, y muchos más.</p>
+      <h5>Ejemplos</h5>
       <div class="row">
       <form class="col s12">
         <div class="row">
@@ -161,7 +165,7 @@
           </div>
         </div>
         <div class="row switch">
-          <label>
+          <label class="tooltipped" data-position="right" data-delay="50" data-tooltip="Un Switch es un botón palanca que permite al usuario alternar una configuración entre 2 estados">
             Off
             <input type="checkbox">
             <span class="lever"></span>
@@ -169,23 +173,28 @@
           </label>
         </div>
         <div class="row">
-          <div class="col s6">
+          <div class="col s6 tooltipped" data-position="right" data-delay="50" data-tooltip="Los Pickers son diálogos para que el usuario seleccione un solo valor de una lista">
             <label for="birthday">Fecha de nacimiento</label>
             <input type="date" class="datepicker">
           </div>
-          <div class="col s6">
+          <div class="col s5 tooltipped" data-position="left" data-delay="50" data-tooltip="Los Spinners son menus desplagables que permiten al usuario puede elegir un valor entre varios">
             <br>
             <select>
-              <option value="" disabled selected>Choose your option</option>
+              <option value="" disabled selected>Spinners</option>
               <option value="1">Option 1</option>
               <option value="2">Option 2</option>
               <option value="3">Option 3</option>
             </select>
             <label>Materialize Select</label>
           </div>
+          <div class="col s1">
+            <br>
+            <br>
+            <a href="https://developer.android.com/intl/es/guide/topics/ui/controls/spinner.html"><i class="material-icons">web</i></a>
+          </div>
         </div>
         <div class="row">
-          <a class="waves-effect waves-teal btn-flat"><i class="material-icons left">send</i>Cancelar</a>
+          <a class="waves-effect waves-teal btn-flat"><i class="material-icons left">delete</i>Cancelar</a>
           <a class="waves-effect waves-teal btn-flat">Guardar</a>
           <a class="waves-effect waves-teal btn-flat">
             <i class="material-icons right" onclick="Materialize.toast('Mensaje enviado', 4000)">send</i>Enviar
@@ -197,22 +206,34 @@
     <div class="row">
       <h2>Notificaciones</h2>
       <p>El sistema de notificaciones les permite a los usuarios mantenerse informados sobre eventos relevantes y oportunos de su aplicación, como nuevos mensajes de chat de un amigo o un evento del calendario. Piense en las notificaciones como un canal de noticias que alerta a los usuarios sobre eventos importantes a medida que se producen o como un registro en el que se relatan los eventos mientras el usuario no está prestando atención y que se sincroniza de forma correspondiente en todos los dispositivos de Android.</p>
-      <div class="row my-card blue-grey darken-3">
-        <div class="col s2">
-          <a class="btn-floating green"><i class="material-icons">format_quote</i></a>
+      <h5>Diseño básico  <a href="https://developer.android.com/intl/es/design/patterns/notifications.html"><i class="material-icons">web</i></a></h5>
+      <div class="row my-card blue-grey darken-3 hoverable">
+        <div class="col s2 my-card-icon tooltipped" data-position="left" data-delay="50" data-tooltip="Icono">
+          <a class="btn-floating green"><i class="material-icons center">format_quote</i></a>
         </div>
         <div class="col s10">
           <div class="row">
-            <div class="col s6 left-align my-card-title">Daniel</div>
-            <div class="col s6 right-align my-card-timestamp">5:30 pm</div>
+            <div class="col s6 left-align my-card-title tooltipped" data-position="top" data-delay="50" data-tooltip="Título/Nombre">Daniel</div>
+            <div class="col s6 right-align my-card-timestamp tooltipped" data-position="right" data-delay="50" data-tooltip="Marca de tiempo">5:30 pm</div>
           </div>
           <div class="row">
-            <div class="col s12">
+            <div class="col s12 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Mensaje/Contenido">
               Lorem ipsum dolor sit amet?
             </div>
           </div>
         </div>
-      </div>    
+      </div>
+      <div class="row">
+
+      </div>
+    </div>
+    <div class="row">
+      <h2>Toasts</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut illo eius ratione commodi numquam, natus enim sunt! Totam numquam, quam eos placeat atque ratione cupiditate eligendi cum animi quibusdam dolores.</p>
+    </div>
+    <div class="row">
+      <h2>Barra de acción</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut illo eius ratione commodi numquam, natus enim sunt! Totam numquam, quam eos placeat atque ratione cupiditate eligendi cum animi quibusdam dolores.</p>
     </div>
   </div>
 
