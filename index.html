@@ -13,7 +13,7 @@
 </head>
 <body>
   <style>
-    @media only screen and (min-width : 601px) and (max-width : 1260px) {
+    /*@media only screen and (min-width : 601px) and (max-width : 1260px) {
       .toast {
         width: 100%;
         border-radius: 0;
@@ -45,27 +45,41 @@
       right: 0%;
       left: 0%;
       }
+    }*/
+    .my-card{
+      color: white;
+      padding: 2px;
+      width: 320px
     }
-    span #title{
-      font-family: "IDroid";
+    .my-card .row{
+      margin-bottom: 0px;
+    }
+    .my-card-title{
+      font-size: 17px;
+      font-weight: bold;
+      margin-left: 0;
+    }
+    .my-card-timestamp{
+      font-weight: lighter;
+    }
+    .my-card-body{
+      font-weight: normal;
     }
   </style>
 
   <nav>
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo"><img src="img/logo.png" class="responsive-img" alt=""></a>
+      <a href="#!" class="brand-logo center"><img src="img/logo.png" class="responsive-img" alt=""></a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li>
-          <div class="nav-wrapper">
-            <form>
-              <div class="input-field">
-                <input id="search" type="search" required>
-                <label for="search"><i class="material-icons">search</i></label>
-                <i class="material-icons">close</i>
-              </div>
-            </form>
-        </div>
+          <form>
+            <div class="input-field">
+              <input id="search" type="search" required>
+              <label for="search"><i class="material-icons">search</i></label>
+              <i class="mdi-navigation-close close"></i>
+            </div>
+          </form>
         </li>
         <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
         <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
@@ -97,26 +111,24 @@
       <h2>Input Controls</h2>
       <p>Input controls are the interactive components in your app's user interface. Android provides a wide variety of controls you can use in your UI, such as buttons, text fields, seek bars, checkboxes, zoom buttons, toggle buttons, and many more.</p>
       <p>Adding an input control to your UI is as simple as adding an XML element to your XML layout. For example, here's a layout with a text field and button:</p>
-      <h3>Botones</h3>
-      <p>A push-button that can be pressed, or clicked, by the user to perform an action.</p>
       <div class="row">
       <form class="col s12">
         <div class="row">
-          <div class="input-field col s12">
+          <div class="input-field col s12 tooltipped" data-position="top" data-delay="50" data-tooltip="Campo de texto editable que le permite al usuario ingresar texto">
             <i class="material-icons prefix">account_circle</i>
             <input id="email" type="email">
             <label for="email">Email</label>
           </div>
         </div>
         <div class="row">
-          <div class="input-field col s12">
+          <div class="input-field col s12 tooltipped" data-position="top" data-delay="50" data-tooltip="Campo de texto editable que le permite al usuario ingresar contraseñas ocultando los caracteres">
             <i class="material-icons prefix">lock_outline</i>
             <input id="password" type="password">
             <label for="password">Password</label>
           </div>
         </div>
         <div class="row">
-          <div class="input-field col s12">
+          <div class="input-field col s12 tooltipped" data-position="top" data-delay="50" data-tooltip="Las areas de texto permiten mayor ingreso de texto y son explandibles">
             <i class="material-icons prefix">mode_edit</i>
             <textarea id="textarea1" class="materialize-textarea"></textarea>
             <label for="textarea1">Textarea</label>
@@ -124,11 +136,11 @@
         </div>
         <div class="row">
            <p>
-            <input type="checkbox" id="test5" />
-            <label for="test5">Estoy de acuerdo</label>
+            <input type="checkbox" id="test5" >
+            <label for="test5" class="tooltipped" data-position="right" data-delay="50" data-tooltip="Los Checkboxes se usan cuando se buscan respuestas de si o no">Estoy de acuerdo</label>
           </p>
         </div>
-        <div class="row">
+        <div class="row tooltipped" data-position="top" data-delay="50" data-tooltip="Los Radio Buttons se usan cuando el usario debe elegir un solo elemento de una lista de items">
           <div class="col s4">
             <p>
               <input class="with-gap" name="group1" type="radio" id="test3"/>
@@ -181,6 +193,26 @@
         </div>
       </form>
     </div>
+    </div>
+    <div class="row">
+      <h2>Notificaciones</h2>
+      <p>El sistema de notificaciones les permite a los usuarios mantenerse informados sobre eventos relevantes y oportunos de su aplicación, como nuevos mensajes de chat de un amigo o un evento del calendario. Piense en las notificaciones como un canal de noticias que alerta a los usuarios sobre eventos importantes a medida que se producen o como un registro en el que se relatan los eventos mientras el usuario no está prestando atención y que se sincroniza de forma correspondiente en todos los dispositivos de Android.</p>
+      <div class="row my-card blue-grey darken-3">
+        <div class="col s2">
+          <a class="btn-floating green"><i class="material-icons">format_quote</i></a>
+        </div>
+        <div class="col s10">
+          <div class="row">
+            <div class="col s6 left-align my-card-title">Daniel</div>
+            <div class="col s6 right-align my-card-timestamp">5:30 pm</div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              Lorem ipsum dolor sit amet?
+            </div>
+          </div>
+        </div>
+      </div>    
     </div>
   </div>
 
