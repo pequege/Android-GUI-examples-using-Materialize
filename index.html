@@ -26,26 +26,7 @@
         radius: 0;
       }
     }
-
-    @media only screen and (min-width : 601px) and (max-width : 1260px) {
-      #toast-container {
-        min-width: 100%;
-        bottom: 0%;
-        top: 90%;
-        right: 0%;
-        left: 0%;
-        }
-      }
-
-    @media only screen and (min-width : 1261px) {
-    #toast-container {
-      min-width: 100%;
-      bottom: 0%;
-      top: 90%;
-      right: 0%;
-      left: 0%;
-      }
-    }*/
+*/
     .my-card{
       color: white;
       padding: 2px;
@@ -67,6 +48,9 @@
     }
     .my-card-body{
       font-weight: normal;
+    }
+    .actionbar-img{
+      max-width: 335px !important;
     }
   </style>
 <div class="navbar-fixed">
@@ -112,128 +96,140 @@
       </ul>
     </div>
     <div class="row">
-      <h2>Controles de entrada</h2>
-      <p>Los controles de entrada son los componentes interactivos en la interfaz de usuario de tu app. Android provee una amplía variedad de controles que puedes usar en tu IU, tales como botones, campos de texto, barras de búsqueda, checkboxes, botones de zoom, botones toggle, y muchos más.</p>
-      <h5>Ejemplos</h5>
-      <div class="row">
-      <form class="col s12">
+      <div class="col s12">
+        <h2>Controles de entrada</h2>
+        <p>Los controles de entrada son los componentes interactivos en la interfaz de usuario de tu app. Android provee una amplía variedad de controles que puedes usar en tu IU, tales como botones, campos de texto, barras de búsqueda, checkboxes, botones de zoom, botones toggle, y muchos más.</p>
+        <h5>Ejemplos</h5>
         <div class="row">
-          <div class="input-field col s12 tooltipped" data-position="top" data-delay="50" data-tooltip="Campo de texto editable que le permite al usuario ingresar texto">
-            <i class="material-icons prefix">account_circle</i>
-            <input id="email" type="email">
-            <label for="email">Email</label>
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12 tooltipped" data-position="top" data-delay="50" data-tooltip="Campo de texto editable que le permite al usuario ingresar texto">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="email" type="email">
+              <label for="email">Email</label>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12 tooltipped" data-position="top" data-delay="50" data-tooltip="Campo de texto editable que le permite al usuario ingresar contraseñas ocultando los caracteres">
-            <i class="material-icons prefix">lock_outline</i>
-            <input id="password" type="password">
-            <label for="password">Password</label>
+          <div class="row">
+            <div class="input-field col s12 tooltipped" data-position="top" data-delay="50" data-tooltip="Campo de texto editable que le permite al usuario ingresar contraseñas ocultando los caracteres">
+              <i class="material-icons prefix">lock_outline</i>
+              <input id="password" type="password">
+              <label for="password">Password</label>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12 tooltipped" data-position="top" data-delay="50" data-tooltip="Las areas de texto permiten mayor ingreso de texto y son explandibles">
-            <i class="material-icons prefix">mode_edit</i>
-            <textarea id="textarea1" class="materialize-textarea"></textarea>
-            <label for="textarea1">Textarea</label>
+          <div class="row">
+            <div class="input-field col s12 tooltipped" data-position="top" data-delay="50" data-tooltip="Las areas de texto permiten mayor ingreso de texto y son explandibles">
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Textarea</label>
+            </div>
           </div>
-        </div>
-        <div class="row">
-           <p>
-            <input type="checkbox" id="test5" >
-            <label for="test5" class="tooltipped" data-position="right" data-delay="50" data-tooltip="Los Checkboxes se usan cuando se buscan respuestas de si o no">Estoy de acuerdo</label>
-          </p>
-        </div>
-        <div class="row tooltipped" data-position="top" data-delay="50" data-tooltip="Los Radio Buttons se usan cuando el usario debe elegir un solo elemento de una lista de items">
-          <div class="col s4">
-            <p>
-              <input class="with-gap" name="group1" type="radio" id="test3"/>
-              <label for="test3">Empleado</label>
+          <div class="row">
+             <p>
+              <input type="checkbox" id="test5" >
+              <label for="test5" class="tooltipped" data-position="right" data-delay="50" data-tooltip="Los Checkboxes se usan cuando se buscan respuestas de si o no">Estoy de acuerdo</label>
             </p>
           </div>
-          <div class="col s4">
-            <p>
-              <input class="with-gap" name="group1" type="radio" id="test1"/>
-              <label for="test1">Estudiante</label>
-            </p>
+          <div class="row tooltipped" data-position="top" data-delay="50" data-tooltip="Los Radio Buttons se usan cuando el usario debe elegir un solo elemento de una lista de items">
+            <div class="col s4">
+              <p>
+                <input class="with-gap" name="group1" type="radio" id="test3"/>
+                <label for="test3">Empleado</label>
+              </p>
+            </div>
+            <div class="col s4">
+              <p>
+                <input class="with-gap" name="group1" type="radio" id="test1"/>
+                <label for="test1">Estudiante</label>
+              </p>
+            </div>
+            <div class="col s4">
+              <p>
+                <input class="with-gap" name="group1" type="radio" id="test2"/>
+                <label for="test2">Desocupado</label>
+              </p>
+            </div>
           </div>
-          <div class="col s4">
-            <p>
-              <input class="with-gap" name="group1" type="radio" id="test2"/>
-              <label for="test2">Desocupado</label>
-            </p>
+          <div class="row switch">
+            <label class="tooltipped" data-position="right" data-delay="50" data-tooltip="Un Switch es un botón palanca que permite al usuario alternar una configuración entre 2 estados">
+              Off
+              <input type="checkbox">
+              <span class="lever"></span>
+              On
+            </label>
           </div>
-        </div>
-        <div class="row switch">
-          <label class="tooltipped" data-position="right" data-delay="50" data-tooltip="Un Switch es un botón palanca que permite al usuario alternar una configuración entre 2 estados">
-            Off
-            <input type="checkbox">
-            <span class="lever"></span>
-            On
-          </label>
-        </div>
-        <div class="row">
-          <div class="col s6 tooltipped" data-position="right" data-delay="50" data-tooltip="Los Pickers son diálogos para que el usuario seleccione un solo valor de una lista">
-            <label for="birthday">Fecha de nacimiento</label>
-            <input type="date" class="datepicker">
+          <div class="row">
+            <div class="col s6 tooltipped" data-position="right" data-delay="50" data-tooltip="Los Pickers son diálogos para que el usuario seleccione un solo valor de una lista">
+              <label for="birthday">Fecha de nacimiento</label>
+              <input type="date" class="datepicker">
+            </div>
+            <div class="col s5 tooltipped" data-position="left" data-delay="50" data-tooltip="Los Spinners son menus desplagables que permiten al usuario puede elegir un valor entre varios">
+              <br>
+              <select>
+                <option value="" disabled selected>Spinners</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+              <label>Materialize Select</label>
+            </div>
+            <div class="col s1">
+              <br>
+              <br>
+              <a href="https://developer.android.com/intl/es/guide/topics/ui/controls/spinner.html" target="_blank"><i class="material-icons">add</i></a>
+            </div>
           </div>
-          <div class="col s5 tooltipped" data-position="left" data-delay="50" data-tooltip="Los Spinners son menus desplagables que permiten al usuario puede elegir un valor entre varios">
-            <br>
-            <select>
-              <option value="" disabled selected>Spinners</option>
-              <option value="1">Option 1</option>
-              <option value="2">Option 2</option>
-              <option value="3">Option 3</option>
-            </select>
-            <label>Materialize Select</label>
+          <div class="row tooltipped" data-position="bottom" data-delay="50" data-tooltip="Un botón consiste en un ícono o un texto (o ambos) que comunica que acción ocurre cuando el usuario lo toca">
+            <a class="waves-effect waves-teal btn-flat"><i class="material-icons left">cancel</i>Cancelar</a>
+            <a class="waves-effect waves-teal btn-flat">Guardar</a>
+            <a class="waves-effect waves-teal btn-flat">
+              <i class="material-icons right" onclick="Materialize.toast('Mensaje enviado', 4000)">send</i>Enviar
+            </a>
           </div>
-          <div class="col s1">
-            <br>
-            <br>
-            <a href="https://developer.android.com/intl/es/guide/topics/ui/controls/spinner.html"><i class="material-icons">web</i></a>
-          </div>
-        </div>
-        <div class="row">
-          <a class="waves-effect waves-teal btn-flat"><i class="material-icons left">delete</i>Cancelar</a>
-          <a class="waves-effect waves-teal btn-flat">Guardar</a>
-          <a class="waves-effect waves-teal btn-flat">
-            <i class="material-icons right" onclick="Materialize.toast('Mensaje enviado', 4000)">send</i>Enviar
-          </a>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
-    </div>
+  </div>
     <div class="row">
-      <h2>Notificaciones</h2>
-      <p>El sistema de notificaciones les permite a los usuarios mantenerse informados sobre eventos relevantes y oportunos de su aplicación, como nuevos mensajes de chat de un amigo o un evento del calendario. Piense en las notificaciones como un canal de noticias que alerta a los usuarios sobre eventos importantes a medida que se producen o como un registro en el que se relatan los eventos mientras el usuario no está prestando atención y que se sincroniza de forma correspondiente en todos los dispositivos de Android.</p>
-      <h5>Diseño básico  <a href="https://developer.android.com/intl/es/design/patterns/notifications.html"><i class="material-icons">web</i></a></h5>
-      <div class="row my-card blue-grey darken-3 hoverable">
-        <div class="col s2 my-card-icon tooltipped" data-position="left" data-delay="50" data-tooltip="Icono">
-          <a class="btn-floating green"><i class="material-icons center">format_quote</i></a>
-        </div>
-        <div class="col s10">
-          <div class="row">
-            <div class="col s6 left-align my-card-title tooltipped" data-position="top" data-delay="50" data-tooltip="Título/Nombre">Daniel</div>
-            <div class="col s6 right-align my-card-timestamp tooltipped" data-position="right" data-delay="50" data-tooltip="Marca de tiempo">5:30 pm</div>
+      <div class="col s12">
+        <h2>Notificaciones</h2>
+        <p>El sistema de notificaciones les permite a los usuarios mantenerse informados sobre eventos relevantes y oportunos de su aplicación, como nuevos mensajes de chat de un amigo o un evento del calendario. Piense en las notificaciones como un canal de noticias que alerta a los usuarios sobre eventos importantes a medida que se producen o como un registro en el que se relatan los eventos mientras el usuario no está prestando atención y que se sincroniza de forma correspondiente en todos los dispositivos de Android.</p>
+        <h5>Diseño básico  <a href="https://developer.android.com/intl/es/design/patterns/notifications.html" target="_blank"><i class="material-icons">add</i></a></h5>
+        <div class="row my-card blue-grey darken-3 hoverable">
+          <div class="col s2 my-card-icon tooltipped" data-position="left" data-delay="50" data-tooltip="Icono">
+            <a class="btn-floating green"><i class="material-icons center">format_quote</i></a>
           </div>
-          <div class="row">
-            <div class="col s12 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Mensaje/Contenido">
-              Lorem ipsum dolor sit amet?
+          <div class="col s10">
+            <div class="row">
+              <div class="col s6 left-align my-card-title tooltipped" data-position="top" data-delay="50" data-tooltip="Título/Nombre">Daniel</div>
+              <div class="col s6 right-align my-card-timestamp tooltipped" data-position="right" data-delay="50" data-tooltip="Marca de tiempo">5:30 pm</div>
+            </div>
+            <div class="row">
+              <div class="col s12 tooltipped" data-position="bottom" data-delay="50" data-tooltip="Mensaje/Contenido">
+                Lorem ipsum dolor sit amet?
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
-
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <h2>Toasts</h2>
+        <p>Un Toast provee una retroalimentación simple sobre operaciones en un pequeño pop-up y desaparecen después de un tiempo determinado.</p>
+        <blockquote>Por ejemplo, cuando estamos redactando un mail y salimos sin haberlo enviado, se dispara un Toast con el mensaje "Guardado en borradores" para hacernos saber que podemos continuar redactando luego.</blockquote>
+        <img src="img/toast.png" alt="" class="responsive-img">
       </div>
     </div>
     <div class="row">
-      <h2>Toasts</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut illo eius ratione commodi numquam, natus enim sunt! Totam numquam, quam eos placeat atque ratione cupiditate eligendi cum animi quibusdam dolores.</p>
-    </div>
-    <div class="row">
-      <h2>Barra de acción</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut illo eius ratione commodi numquam, natus enim sunt! Totam numquam, quam eos placeat atque ratione cupiditate eligendi cum animi quibusdam dolores.</p>
+      <div class="col s12">
+        <h2>Barra de acción<a href="https://developer.android.com/intl/es/design/patterns/actionbar.html" target="_blank"><i class="material-icons">add</i></a></h2>
+        <p>La barra de accion es una caracteristica de las ventanas que identifica donde se ubica el usuario, también le provee acciones y modos de navegación.<br>
+        Usar la barra de acción le ofrece al usuario una interfaz familiar a traves de las aplicaciones que el sistema adecuadamente adapta a diferentes configuraciones de pantalla.</p>
+        <img src="img/actionbar.png" alt="" class="responsive-img actionbar-img">
+        <blockquote>
+          La barra de acción incluye [1] el ícono de la aplicación, [2] dos íconos de acción, y [3] un action overflow.
+        </blockquote>
+      </div>
     </div>
   </div>
 
