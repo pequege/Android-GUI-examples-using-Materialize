@@ -49,9 +49,12 @@
     .my-card-body{
       font-weight: normal;
     }
-    .actionbar-img{
-      max-width: 335px !important;
+    @media only screen and (min-width : 380px) {
+      .actionbar-img{
+        max-width: 320px !important;
+      }
     }
+    
   </style>
 <div class="navbar-fixed">
   <nav>
@@ -126,7 +129,7 @@
           <div class="row">
              <p>
               <input type="checkbox" id="test5" >
-              <label for="test5" class="tooltipped" data-position="right" data-delay="50" data-tooltip="Los Checkboxes se usan cuando se buscan respuestas de si o no">Estoy de acuerdo</label>
+              <label for="test5" class="tooltipped" data-position="right" data-delay="50" data-tooltip="Los Checkboxes se usan cuando se buscan respuestas de si o no">Acepto las condiciones y términos de uso</label>
             </p>
           </div>
           <div class="row tooltipped" data-position="top" data-delay="50" data-tooltip="Los Radio Buttons se usan cuando el usario debe elegir un solo elemento de una lista de items">
@@ -231,6 +234,12 @@
         </blockquote>
       </div>
     </div>
+    <div class="row">
+      <div class="col s12">
+        <h3>Side bar</h3>
+        <img src="img/menu.gif" alt="" class="responsive-img">
+      </div>
+    </div>
   </div>
 
   <footer class="page-footer teal">
@@ -242,22 +251,12 @@
 
 
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+        <div class="col l6 s12">
+          <h5 class="white-text">Fuentes</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="https://developer.android.com/intl/es/guide/topics/ui/index.html" target="_blank">Android Developers</a></li>
+            <li><a class="white-text" href="https://www.google.com/design/spec/components/bottom-sheets.html#bottom-sheets-specs" target="_blank">Material Design</a></li>
+            <li><a class="white-text" href="http://materializecss.com/" target="_blank">Materialize</a></li>
           </ul>
         </div>
       </div>
